@@ -3,6 +3,7 @@
 import sys
 import datetime
 import math
+import os
 
 """PYTHON EXERCISES BASIC I:
 
@@ -41,7 +42,38 @@ Sample Output :
 r = 1.1
 Area = 3.8013271108436504"""
 
+# SOLUTION EXERCISE 4:
 r = float(input("\nEnter the radius: "))
 a = (r**2) * math.pi
 print(a)
 
+"""#5. Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them."""
+
+# SOLUTION EXERCISE 5:
+first = input("\nEnter your first name: ")
+last = input("Enter your last name: ")
+print(last, first)
+
+"""#6. Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple 
+with those numbers.
+
+Sample data : 3, 5, 7, 23
+Output :
+List : ['3', ' 5', ' 7', ' 23']
+Tuple : ('3', ' 5', ' 7', ' 23')"""
+print("")
+
+# SOLUTION EXERCISE 6:
+user_list = input("Enter a list: ")
+magic_list = user_list.split(",")
+magic_tuple = tuple(magic_list)
+print("this is a list: ", magic_list)
+print("this is a tuple: ", magic_tuple)
+print("")
+
+"""#7. Write a Python program to accept a filename from the user and print the extension of that."""
+
+# SOLUTION EXERCISE 7:
+file_user = input("Enter the file name and extension: ")
+extension = os.path.splitext(file_user)[1]
+print(extension)

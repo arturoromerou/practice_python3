@@ -71,9 +71,37 @@ print("this is a list: ", magic_list)
 print("this is a tuple: ", magic_tuple)
 print("")
 
-"""#7. Write a Python program to accept a filename from the user and print the extension of that."""
+"""#7. Write a Python program to accept a filename from the user and print the extension of that.
+Sample filename : abc.java
+Output : java"""
 
 # SOLUTION EXERCISE 7:
 file_user = input("Enter the file name and extension: ")
-extension = os.path.splitext(file_user)[1]
+extension = file_user.split(".")[1]
 print(extension)
+
+"""#8. Write a Python program to display the first and last colors from the following list.
+color_list = ["Red","Green","White" ,"Black"]"""
+
+# SOLUTION EXERCISE 8:
+color_list = ["Red","Green","White","Black"]
+value = "%s %s"%(color_list[0],color_list[-1])
+print(value)
+
+"""#9. Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+exam_st_date = (11, 12, 2014)
+Sample Output : The examination will start from : 11 / 12 / 2014"""
+
+# SOLUTION EXERCISE 9:
+
+exam_st_date = (11, 12, 2020)
+date = "%d / %d / %d"%(exam_st_date)
+print("\nThe examination will start from:", date)
+
+"""#10. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn. Go to the editor
+Sample value of n is 5
+Expected Result : 615"""
+
+# SOLUTION EXERCISE 10:
+n = int(input("\nEnter a value: "))
+print(n + (n*11) + (n*111))

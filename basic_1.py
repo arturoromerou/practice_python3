@@ -105,3 +105,13 @@ Expected Result : 615"""
 # SOLUTION EXERCISE 10:
 n = int(input("\nEnter a value: "))
 print(n + (n*11) + (n*111))
+
+"""11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+Sample function : abs()
+Expected Result :
+abs(number) -> number
+Return the absolute value of the argument."""
+
+# SOLUTION EXERCISE 11:
+print("")
+print(abs.__doc__)

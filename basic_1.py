@@ -1,5 +1,5 @@
-# This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the 
-# interpreter. It is always available.
+# This module provides access to some variables used or maintained by the interpreter and to functions that 
+# interact strongly with the interpreter. It is always available.
 import sys
 import datetime
 import math

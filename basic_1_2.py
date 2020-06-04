@@ -39,3 +39,8 @@ print(delta.days, "days")
 r = int(input("Enter radius to get the volume: "))
 v = 4/3 * math.pi * r**3
 print("volume: ", v)
+
+"""#16. Write a Python program to get the difference between a given number and 17, if the number is greater 
+than 17 return double the absolute difference."""
+
+num = int(input("Enter a number: "))

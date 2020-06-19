@@ -6,4 +6,5 @@ app = Flask(__name__) # nuevo objeto
 def index():
     return "hola mundo"
 
-app.run # se encarga de ejecutar el servidor por defecto en el puerto 5000
+if __name__ == '__main__':
+    app.run # se encarga de ejecutar el servidor por defecto en el puerto 5000

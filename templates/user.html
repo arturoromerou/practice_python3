@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Bienvenido {{ nombre }} tienes {{ age }} anios de edad</h1>
+    {% if age > 18 %}
+        <p>es mayor de edad</p>
+    {% endif %}
+
+
+    {% for i in list %}
+        <p>{{ i }}</p>
+    {% endfor %}
+</body>
+</html>

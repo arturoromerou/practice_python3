@@ -4,7 +4,7 @@ from flask import request # nos ayuda a recibir parametros desde la url
 app = Flask(__name__) # nuevo objeto
 
 @app.route('/') # wrap o decorador
-def index():
+def hola_mundo():
     return "hola mundo"
 
 # creamos una ruta nueva llamada params
